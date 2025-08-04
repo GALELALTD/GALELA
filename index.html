@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Galela - Fill-Up The Smart Way!
+</title>
+<meta name="description" content="Galela is a fuel credit service to help South Africans fill up at very low costs! A Fill-Up can cbe a full tank or less, meaning it'll be smarter to just fill up whenever you are almost out of fuel to avoid wasting a Fill-Up on anything less than a full tank.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="favicon" href="favicon.png">
+<link rel="shortcut icon" href="favicon.png">
+<link rel="favicon" href="favicon.ico">
+<link rel="stylesheet" href="main.css">
+<script src="main.js"></script>
+</head>
+<body>
+<div id="header">
+</div>
+<div class="logo hicon" title="Galela Logo" onfocus="location='/';" tabindex="2"></div>
+<div class="menu hicon" title="Menu Access" onfocus="location='#menu'; window.setTimeout(function() {document.querySelector('#menubar').style.display = 'block';},600);" tabindex="2"></div>
+<div class="topup hicon" title="Top Up Your Galela Account" onfocus="location='login.html';" tabindex="2"></div>
+<div class="user hicon" title="Galela User Account" onfocus="location='login.html';" tabindex="2"></div>
+<div class="notific hicon" title="Notifications" onfocus="location='login.html';" tabindex="2"></div>
+
+<div id="content" onmouseup="window.setTimeout(function() {document.querySelector('#menubar').style.display = 'none';},500);" ontouchend="window.setTimeout(function() {document.querySelector('#menubar').style.display = 'none';},500);">
+<div class="cover" title="Fill-Up The Smart Way - Galela!">
+<div class="ch1"></font class="fch">Fill-Up The Smart Way!</font> <br><font class="h4">Top up your card & enjoy affordable full tanks (38 - 80 litres) for your vehicle, at all our supported fuel stations. <a href="#learn" title="Learn More About Galela">Learn More</a></font><br>
+<div class="plist">
+<div class="partner pr1"></div>
+<div class="partner pr2"></div>
+<div class="partner pr3"></div>
+<div class="partner pr4"></div>
+<div class="partner pr5"></div>
+</div>
+</div>
+</div>
+<br/>
+<h4 align="center" id="apply">&nbsp;</h4>
+<br/>
+<h4 align="center">&bull;&bull;&bull;</h4>
+<br/>
+<div class="h2">To Sign Up, Select A Package Below</div>
+<br/>
+<div class="packages">
+<div class="pa1 pal">
+<div class="pname pil">Bronze G Fill-Up</div><br/>
+<div class="pdescription pil">
+&bull;&nbsp; Get a single Fill-Up per top up.<br/>
+&bull;&nbsp; Only 2 top ups allowed per month.<br/>
+&bull;&nbsp; Free Galela Fill-Up Card.<br/>
+<font class="smallgrays">Maximum of 80 litres per Fill-Up</font>
+</div><br/>
+<div class="pcost pil">R579.99</div><br/>
+<div class="papply pil"><button onclick="window.pack = this.parentNode.parentNode.querySelector('.pdescription').innerHTML; localStorage.setItem('pack',pack);window.hpack = this.parentNode.parentNode.querySelector('.pname').innerHTML; localStorage.setItem('hpack',hpack);location = '/register.html?package=bronze';">Select</button></div>
+</div>
+<div class="pa2 pal">
+<div class="pname pil">Silver G Fill-Up</div><br/>
+<div class="pdescription pil">
+&bull;&nbsp; Get 3 Fill-Ups per top up.<br/>
+&bull;&nbsp; Only 2 top ups allowed per month.<br/>
+&bull;&nbsp; Free Galela Fill-Up Card.<br/>
+<font class="smallgrays">Maximum of 80 litres per Fill-Up</font>
+</div><br/>
+<div class="pcost pil">R1299.99</div><br/>
+<div class="papply pil"><button onclick="window.pack = this.parentNode.parentNode.querySelector('.pdescription').innerHTML; localStorage.setItem('pack',pack);window.hpack = this.parentNode.parentNode.querySelector('.pname').innerHTML; localStorage.setItem('hpack',hpack);location = '/register.html?package=silver';">Select</button></div>
+</div>
+<div class="pa3 pal">
+<div class="pname pil">Gold G Fill-Up</div><br/>
+<div class="pdescription pil">
+&bull;&nbsp; Get 6 Fill-Ups per top up.<br/>
+&bull;&nbsp; Up to 3 top ups allowed per month.<br/>
+&bull;&nbsp; Free Galela Fill-Up Card.<br/>
+<font class="smallgrays">Maximum of 80 litres per Fill-Up</font>
+</div><br/>
+<div class="pcost pil">R2499.99</div><br/>
+<div class="papply pil"><button onclick="window.pack = this.parentNode.parentNode.querySelector('.pdescription').innerHTML; localStorage.setItem('pack',pack);window.hpack = this.parentNode.parentNode.querySelector('.pname').innerHTML; localStorage.setItem('hpack',hpack);location = '/register.html?package=gold';">Select</button></div>
+</div>
+<div class="pa4 pal">
+<div class="pname pil">Platinum G Fill-Up</div><br/>
+<div class="pdescription pil">
+&bull;&nbsp; Get 10 Fill-Ups per top up.<br/>
+&bull;&nbsp; Up to 4 top ups allowed per month.<br/>
+&bull;&nbsp; Free Galela Fill-Up Card.<br/>
+<font class="smallgrays">Maximum of 80 litres per Fill-Up</font>
+</div><br/>
+<div class="pcost pil">R3299.99</div><br/>
+<div class="papply pil"><button onclick="window.pack = this.parentNode.parentNode.querySelector('.pdescription').innerHTML; localStorage.setItem('pack',pack);window.hpack = this.parentNode.parentNode.querySelector('.pname').innerHTML; localStorage.setItem('hpack',hpack);location = '/register.html?package=platinum';">Select</button></div>
+</div>
+</div>
+<div class="cd"></div><br/>
+<h4 align="center">&bull;&bull;&bull;</h4>
+<div class="h1 grays" id="learn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Smart!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Affordable!&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fast!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="cd"></div><br/>
+<h4 align="center">&bull;&bull;&bull;</h4>
+<div class="inform">
+<div class="what"><font class="h2">What is a Fill-Up?</font><br/>
+<font class="ptext">A Fill-Up refers to each time you use your Galela card to purchase fuel. Each Fill-Up can be 5 to 80 litres, depending on how much fuel you need at a fuel station. When swiping or using your Galela card to purchase fuel, you use a Fill-Up  each time, meaning if you have 3 Fill-Ups and go to a fuel station 2 times (regardless if you get a full tank or not), you will be left with 1 Fill-Up in your Galela card (which can be topped up).</font></div><br/>
+
+<div class="why"><font class="h2">Why use Galela Fill-Ups?</font><br/>
+<font class="ptext">Galela Fill-Ups are substantiously more affordable than purchasing fuel at normal cost. The higher your Galela package is, the more affordable each Fill-Up is.</font></div><br/>
+
+<div class="how"><font class="h2">How to top up your Fill-Ups?</font><br/>
+<font class="ptext">When your Fill-Ups have been depleted you can always top them up again. To top up your Galela Fill-Ups simply select the option to do so on the website header or on your account page, you have a limited number of times you can top up your Fill-Ups per month (based on your package), this is to ensure fair usage. The fee you pay upon signing up is your first top up per package chosen.</font></div><br/>
+
+<div class="about"><font class="h2">Rules & Guidelines</font><br/>
+<font class="ptext">&bull; It is recommended that you use each Fill-Up to purchase a full tank, this is so you get more out of your card.<br/>&bull; Each Fill-Up has a maximum limit of 80 litres, and in a case where you exceed this limit, your Galela card will decline.<br/>&bull; You are not restricted to how little or how much more fuel you can purchase on each Fill-Up except only if you try to purchase more fuel than the 80 litres limit we allow.<br/>&bull; Galela cards are solely for fuel purchasing & will decline upon an attempt to purchase any other item other than fuel, at our partners' fuel stations.</font></div><br/>
+
+<div class="sponser"><font class="h2">Our Partners</font><br/>
+<font class="ptext">In partnership with Total, BP, Engen, Shell & Sasol, Galela offers a game changing way to stay on the road.</font>
+<div class="plist">
+<div class="partner pr1"></div>
+<div class="partner pr2"></div>
+<div class="partner pr3"></div>
+<div class="partner pr4"></div>
+<div class="partner pr5"></div>
+</div>
+</div>
+<div class="cd"></div>
+</div>
+<br/>
+<br/>
+<br/>
+<div id="footer" class="home">
+<div class="flinks">
+<div class="flink"><a href="/">Home</a></div>
+<div class="flink"><a href="login.html">Your Account</a></div>
+<div class="flink"><a href="support.html">Customer Support</a></div>
+<div class="flink"><a href="about.html">About</a></div>
+<div class="flink"><a href="tos.html">Terms of Service</a></div>
+</div>
+<div id="footnote">
+All Rights reserved &copy; 2025 Galela Ltd
+</div>
+</div>
+<div id="menubar" style="display:none;">
+<div class="mitem"><div class="bilink" tabindex="2" onfocus="document.querySelector('#menubar').style.display='none';"></div></div>
+<br/>
+<div class="mitem"><div class="milink"><a href="" class="mhref">Home</a></div></div>
+<div class="mitem"><div class="milink"><a href="login.html" class="mhref">Fill-Up Balance</a></div></div>
+<div class="mitem"><div class="milink"><a href="login.html" class="mhref">Top Up Your Card</a></div></div>
+<break></break>
+<div class="mitem"><div class="milink"><a href="login.html" class="mhref">Your Account</a></div></div>
+<div class="mitem"><div class="milink"><a href="login.html" class="mhref">Upgrade Your Package</a></div></div>
+<div class="mitem"><div class="milink"><a href="login.html" class="mhref">Replace Card</a></div></div>
+<break></break>
+<div class="mitem"><div class="milink"><a href="#learn" class="mhref">About Galela Fill-Ups</a></div></div>
+<div class="mitem"><div class="milink"><a href="#learn" class="mhref">Rules & Guidelines</a></div></div>
+<div class="mitem"><div class="milink"><a href="/support.html" class="mhref">Customer Support</a></div></div>
+<break></break>
+<div class="mitem"><div class="milink"><a href="#apply" class="mhref">Sign Up</a></div></div>
+<div class="mitem"><div class="milink"><a href="login.html" class="mhref">Login</a></div></div>
+</div>
+</body>
+</html>

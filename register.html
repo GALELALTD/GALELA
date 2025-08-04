@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Sign Up
+</title>
+<meta name="description" content="Sign Up for a Galela account. Galela is a fuel credit service to help South Africans fill up at very low costs! A Fill-Up can cbe a full tank or less, meaning it'll be smarter to just fill up whenever you are almost out of fuel to avoid wasting a Fill-Up on anything less than a full tank.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="favicon" href="favicon.png">
+<link rel="shortcut icon" href="favicon.png">
+<link rel="favicon" href="favicon.ico">
+<link rel="stylesheet" href="main.css">
+<script src="main.js"></script>
+<script>
+pack = localStorage.getItem('pack');
+hpack = localStorage.getItem('hpack');
+if(hpack=="" || hpack == null) {
+location = 'index.html#apply';
+}
+</script>
+</head>
+<body>
+<div id="header">
+</div>
+<div class="logo hicon xero" title="Galela Logo" onfocus="location='/';" tabindex="2">Galela Account</div>
+<div class="back hicon" title="Return Home" onfocus="location='/';" tabindex="2"></div>
+
+<div id="content">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="h2 bigx">Sign Up</div>
+<div class="packages">
+
+<div class="pa1 pal palx" id="rp1">
+<div class="pname pil">Bronze G Fill-Up</div><br/>
+<div class="formpart">
+<input type="firstname" name="firstname" id="firstname" placeholder="First Name" class="field" onchange="ffc(1,this)"><br/>
+<input type="lastname" name="lastname" id="lastname" placeholder="Last Name" class="field" onchange="ffc(1,this)"><br/>
+<input type="text" name="birthday" id="birthday" placeholder="Date of Birth" class="field" onfocus="this.blur();this.type='date';this.focus();this.click();" onchange="ffc(1,this)"><br/>
+<select type="gender" name="gender" id="gender" placeholder="Gender" class="field" onchange="ffc(1,this)">
+<option value="" selected disabled>Gender</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Other">Other</option>
+</select><br/>
+</div>
+<div class="pdescriptionsmall pil">
+&bull;&nbsp; Get a single Fill-Up per top up.<br/>
+&bull;&nbsp; Only 2 top ups allowed per month.<br/>
+&bull;&nbsp; Free Galela Fill-Up Card.<br/>
+<font class="smallgraysx">Maximum of 80 litres per Fill-Up</font>
+</div><br/>
+<div class="pcostx pil">R579.99</div><br/>
+<div class="papplyx pil"><button onclick="document.querySelector('#rp1').style.display='none'; document.querySelector('#rp2').style.display='inline-block';" id="b1" disabled>Continue</button></div>
+</div>
+
+<div class="pa1 pal palx" id="rp2" style="display:none;">
+<div class="pname pil">Bronze G Fill-Up</div><br/>
+<div class="formpart">
+<input type="email" name="email" id="email" placeholder="Email Address" class="field" onchange="ffc(2,this)"><br/>
+<input type="tel" name="phone" id="phone" placeholder="Phone Number" class="field" onchange="ffc(2,this)"><br/>
+<select type="province" name="province" id="province" placeholder="Province" class="field" onchange="ffc(2,this)">
+<option value="" selected disabled>Province</option>
+<option value="GP">Gauteng</option>
+<option value="LP">Limpopo</option>
+<option value="MP">Mpumalanga</option>
+<option value="KZN">Kwa Zulu Natal</option>
+<option value="EC">Eastern Cape</option>
+<option value="WC">Western Cape</option>
+<option value="NC">Northern Cape</option>
+<option value="FS">Free State</option>
+<option value="NW">North West</option>
+</select><br/>
+<input type="city" name="city" id="city" placeholder="City" class="field" onchange="ffc(2,this)"><br/><br/>
+</div>
+<div class="pdescriptionsmall pil">
+&bull;&nbsp; Get a single Fill-Up per top up.<br/>
+&bull;&nbsp; Only 2 top ups allowed per month.<br/>
+&bull;&nbsp; Free Galela Fill-Up Card.<br/>
+<font class="smallgraysx">Maximum of 80 litres per Fill-Up</font>
+</div><br/>
+<div class="pcostx pil">R579.99</div><br/>
+<div class="papplyx pil"><button onclick="document.querySelector('#rp2').style.display='none'; document.querySelector('#rp3').style.display='inline-block';" id="b2" disabled>Next</button>
+<br/>
+<a href="javascript:void(0);" class="plb" onclick="document.querySelector('#rp2').style.display='none'; document.querySelector('#rp1').style.display='inline-block';">Back</a></div>
+</div>
+
+<div class="pa1 pal palx" id="rp3" style="display:none;">
+<div class="pname pil">Bronze G Fill-Up</div><br/>
+<div class="formpart">
+<font class="ptext fpf">Where would you like your Galela Fill-Up card to be delivered?</font>
+<input type="town" name="suburb" id="suburb" placeholder="Suburb/Town" class="field" onchange="ffc(3,this)"><br/>
+<input type="location" name="street" id="street" placeholder="Street Number & Name" class="field" onchange="ffc(3,this)"><br/>
+<input type="number" name="postal" id="postal" placeholder="Zip Code" class="field" onchange="ffc(3,this)"><br/>
+<font class="smallgraysxx">DSV will contact you to confirm.</font>
+</div>
+<div class="pdescriptionsmall pil">
+&bull;&nbsp; Get a single Fill-Up per top up.<br/>
+&bull;&nbsp; Only 2 top ups allowed per month.<br/>
+&bull;&nbsp; Free Galela Fill-Up Card.<br/>
+<font class="smallgraysx">Maximum of 80 litres per Fill-Up</font>
+</div><br/>
+<div class="pcostx pil">R579.99</div><br/>
+<div class="papplyx pil"><button onclick="document.querySelector('#rp3').style.display='none'; document.querySelector('#rp4').style.display='inline-block';" id="b3" disabled>Next</button>
+<br/>
+<a href="javascript:void(0);" class="plb" onclick="document.querySelector('#rp3').style.display='none'; document.querySelector('#rp2').style.display='inline-block';">Back</a></div>
+</div>
+
+<div class="pa1 pal palx" id="rp4" style="display:none;">
+<div class="pname pil">Bronze G Fill-Up</div><br/>
+<div class="formpart">
+<font class="ptext fpf">One last step! How would you like to pay?</font>
+
+<input type="address" name="street" id="street" value="Customer: &nbsp; John Doe" class="field" readonly><br/>
+<input type="address" name="postal" id="postal" value="Amount Due: &nbsp; R579" class="field" readonly><br/>
+<select type="payment" name="payment" id="payment" placeholder="Payment Option" class="field" onchange="paymentView(this.value)">
+<option value="" selected disabled>Payment Options</option>
+<option value="OV">1 Voucher/OTT Voucher</option>
+<option value="SBV">Standard Bank Instant Money</option>
+<option value="EFT">EFT</option>
+</select><br/><font class="smallgraysx pdd">This payment is for your first top up, the Galela FIll-Up card is free & will be delivered in less than 48 hours upon you completing the sign up process.</font>
+</div><br/>
+<div class="pdescriptionsmall pil">
+&bull;&nbsp; Get a single Fill-Up per top up.<br/>
+&bull;&nbsp; Only 2 top ups allowed per month.<br/>
+&bull;&nbsp; Free Galela Fill-Up Card.<br/>
+<font class="smallgraysx">Maximum of 80 litres per Fill-Up</font>
+</div><br/>
+<div class="papplyx pil"><button onclick="done()" id="b4" disabled>Complete Sign Up</button>
+<br/>
+<a href="javascript:void(0);" class="plb" onclick="document.querySelector('#rp4').style.display='none'; document.querySelector('#rp3').style.display='inline-block';">Back</a>
+</div>
+</div>
+
+</div>
+<div class="cd"></div><br/>
+<h4 align="center">&bull;&bull;&bull;</h4>
+<div class="h1 grays" id="learn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Smart!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Affordable!&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fast!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="cd"></div><br/>
+<h4 align="center">&bull;&bull;&bull;</h4><br/>
+<div class="inform">
+<div class="sponser">
+<div class="plist">
+<div class="partner pr1"></div>
+<div class="partner pr2"></div>
+<div class="partner pr3"></div>
+<div class="partner pr4"></div>
+<div class="partner pr5"></div>
+</div>
+</div><br/>
+<div class="cd"></div>
+</div>
+</div>
+<div id="footer">
+<div class="flinks">
+<div class="flink"><a href="/">Home</a></div>
+<div class="flink"><a href="login.html">Your Account</a></div>
+<div class="flink"><a href="support.html">Customer Support</a></div>
+<div class="flink"><a href="about.html">About</a></div>
+<div class="flink"><a href="tos.html">Terms of Service</a></div>
+</div>
+<div id="footnote">
+All Rights reserved &copy; 2025 Galela Ltd
+</div>
+</div>
+<div id="pvb">
+<div id="pv">
+<div id="pvhed">
+EFT Payment
+</div>
+<div id="pvdets">
+
+</div>
+<div class="pvopts">
+<button class="pvo w" onclick="paymentView();document.querySelector('#payment').value='';">Cancel</button>
+<button class="pvo b" onclick="paymentView();document.querySelector('#b4').removeAttribute('disabled');document.querySelector('#payment').outerHTML='<input type=\'text\' class=\'field\' value=\'Payment Awaiting Verification &#10004; ✔\' id=\'payment\' readonly>';document.querySelector('#payment').style.border='1px solid #00ff00';window.setTimeout(function(){document.querySelector('#payment').style.border='';},1000);">Submit</button>
+</div>
+</div>
+</div>
+<script>
+document.querySelectorAll('.pname')[0].innerHTML = hpack ;
+document.querySelectorAll('.pname')[1].innerHTML = hpack ;
+document.querySelectorAll('.pname')[2].innerHTML = hpack ;
+document.querySelectorAll('.pname')[3].innerHTML = hpack ;
+
+document.querySelectorAll('.pdescriptionsmall')[0].innerHTML = pack ;
+document.querySelectorAll('.pdescriptionsmall')[1].innerHTML = pack ;
+document.querySelectorAll('.pdescriptionsmall')[2].innerHTML = pack ;
+document.querySelectorAll('.pdescriptionsmall')[3].innerHTML = pack ;
+</script>
+<script>
+window.fn1 = false;
+window.fn2 = false;
+window.fn3 = false;
+window.ffc = function(n,e)
+{
+if(n==1)
+{
+ var f1 = e.parentNode.querySelectorAll('.field')[0].value;
+ var f2 = e.parentNode.querySelectorAll('.field')[1].value;
+ var f3 = e.parentNode.querySelectorAll('.field')[2].value;
+ var f4 = e.parentNode.querySelectorAll('.field')[3].value;
+	if(f1.length>3 && f2.length>3 && f3.length>3 && f4.length>3) {
+	window.fn1 = true;
+	document.querySelector('#b1').removeAttribute('disabled');
+	}
+} else if(n==2) {
+ var f1 = e.parentNode.querySelectorAll('.field')[0].value;
+ var f2 = e.parentNode.querySelectorAll('.field')[1].value;
+ var f3 = e.parentNode.querySelectorAll('.field')[2].value;
+ var f4 = e.parentNode.querySelectorAll('.field')[3].value;
+	if(f1.length>3 && f2.length>3 && f3.length>1 && f4.length>3) {
+	window.fn2 = true;
+	document.querySelector('#b2').removeAttribute('disabled');
+ //alert(f4)
+	}
+} else if(n==3) {
+ var f1 = e.parentNode.querySelectorAll('.field')[0].value;
+ var f2 = e.parentNode.querySelectorAll('.field')[1].value;
+ var f3 = e.parentNode.querySelectorAll('.field')[2].value;
+	if(f1.length>3 && f2.length>3 && f3.length>3) {
+	window.fn3 = true;
+	document.querySelector('#b3').removeAttribute('disabled');
+	}
+}
+
+}
+</script>
+<script>
+function currentStep(n) {
+window.setInterval(fuction(){
+
+},500);
+}
+currentStep(1);
+</script>
+<script>
+function paymentView(en) {
+document.querySelector('#pvb').style.display = 'block';
+switch(en)
+{
+case "OV":
+document.querySelector('#pvhed').innerHTML = 'OTT/1 Voucher Payment';
+document.querySelector('#pvdets').innerHTML = `
+<input type="text" id="usamountv" value="Amount Due: R579" readonly class="field"><br/>
+<input type="number" name="pin" placeholder="Voucher Number" id="pin" class="field"><br/>
+<font class="grays">It takes 1 hour for us to verify your voucher, after which you will receive a confirmation email to <font class="toemail"></font> & SMS to <font class="tophone"></font>.<br/>Proof of payments can be sent to <b id="usproofemail">proof@galela.co.za</b>. For further assistance please feel free to WhatsApp Us at <b id="uswhatsapp">0812345678</b>, we're available 24/7 to respond to your inquieries.
+</font>
+`;
+break;
+case "SBV":
+document.querySelector('#pvhed').innerHTML = 'Standard Bank Instant Money Voucher Payment';
+document.querySelector('#pvdets').innerHTML = `
+<input type="text" id="usamounts" value="Amount Due: R579" readonly class="field"><br/>
+<input type="number" name="voucher" placeholder="Voucher Number" id="voucher" class="field"><br/>
+<input type="number" name="code" placeholder="Pin Code" id="code" class="field"><br/>
+<font class="grays">It takes 1 hour for us to verify your voucher, after which you will receive a confirmation email to <font class="toemail"></font> & SMS to <font class="tophone"></font>.<br/>Proof of payments can be sent to <b id="usproofemail">proof@galela.co.za</b>. For further assistance please feel free to WhatsApp Us at <b id="uswhatsapp">0812345678</b>, we're available 24/7 to respond to your inquieries.
+</font>
+`;
+break;
+case "EFT":
+document.querySelector('#pvhed').innerHTML = 'EFT Payment';
+document.querySelector('#pvdets').innerHTML = `
+<input type="text" id="usbank" value="Bank Name: ABSA Bank" readonly class="field"><br/>
+<input type="text" id="usaccountnumber" value="Account Number: 95489849" readonly class="field"><br/>
+<input type="text" id="ustype" value="Account Type: Current / Cheque" readonly class="field"><br/>
+<input type="text" id="youreference" value="Reference Number: 0712345678" readonly class="field"><br/>
+<input type="text" id="usamount" value="Amount Due: R579" readonly class="field"><br/>
+<a href="javascript:void(0);" onclick="proofeft.click();" class="proat">Attach a proof of payment (Optional)</a><input type="file" name="proofeft" id="proofeft" style="display:none;" onchange="document.querySelector('.proat').innerHTML='Proof of payment has been attached';">
+<font class="grays">It takes  up to 90 minutes for an immediate EFT to reflect to us. Should you make a normal payment, it can take up to 48 hours to reflect to us. After which you will receive a confirmation email to <font class="toemail"></font> & SMS to <font class="tophone"></font>.<br/>Proof of payments can also be sent to <b id="usproofemail">proof@galela.co.za</b> if you did not attach it on this page.
+</font>
+`;
+break;
+default:
+document.querySelector('#pvb').style.display = 'none';
+break;
+}
+}
+</script>
+</body>
+</html>

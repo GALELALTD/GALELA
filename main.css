@@ -1,0 +1,119 @@
+@font-face {font-family:goor;src:url(OpenSans-Regular.ttf);}
+@font-face {font-family:goom;src:url(OpenSans-Medium.ttf);}
+@font-face {font-family:uberb;src:url(UberMoveBold.otf);}
+@font-face {font-family:uberm;src:url(UberMoveMedium.otf);}
+* {margin:0px;background-position:50% 50%;background-size:cover;background-repeat:no-repeat;box-sizing:border-box;}
+html {width:100%;overflow-x:hidden;}
+body {font-size:14px;font-family:goor;width:100%;overflow-x:hidden;color:rgba(0,10,20,0.99);}
+a {text-decoration:none;color:royalblue;}
+div {display:block;width:100%;}
+div.il {display:inline;}
+div.ib {display:inline-block;}
+
+font.h1, .h1 {font-size:32px;}
+font.h2, .h2 {font-size:24px;}
+font.h3 {font-size:16px;}
+font.h4 {font-size:14px;}
+font.b {font-weight:bold;}
+.grays {color:#012;opacity:0.7;}
+
+#header {height:64px;box-shadow:0px 4px 4px rgba(0,0,0,0.5);background-color:#1A2730;position:fixed;top:0px;left:0px;z-index:9;}
+.hicon {width:32px;height:32px;position:fixed;top:16px;z-index:11;background-color:rgba(0,0,0,0.05);border-radius:6px;}
+.user {background-image:url(user.png);right:16px;border-radius:16px;}
+.notific {background-image:url(message.png);right:72px;background-size:90%;}
+.topup {background-image:url(addrow.png);right:128px;}
+.logo {background-image:url(logo.png);left:57px;height:36px;width:8em;background-position:0px 50%;background-size:auto calc(100% - 4px);top:14px;}
+.menu {background-image:url(menu.png);left:16px;width:25px;height:25px;top:19px;background-size:auto calc(100% - 4px);}
+.back {margin-left:10px;top:11px;color:#eee;font-size:28px;font-family:uberm;width:40px;height:40px;border:1px solid rgba(0,7,14,0.3);background-image:url(backarrow.png);border-radius:4px;background-size:75% auto;background-color:rgba(0,10,30,0.3);position:fixed;z-index:12;}
+.xero {background-image:unset;color:white;width:unset;font-size:24px;padding-left:4px;}
+
+#content {margin-top:0;background-color:white;}
+.cover {background-image:url(cardc.jpg);height:40em;width:100%;background-attachment:unset;filter:contrast(100%);z-index:10;position:relative;top:0px;left:0px;background-size:auto 100%;display:table-cell;vertical-align:bottom;}
+@media only screen and (max-width: 480px) {
+.cover {background-size: 300% auto;height: 31em;background-position: 50% 0%;}
+}
+.cover:after {content:"";background-color:rgba(100,170,255,0.2);position:absolute;display:inline-block;left:0px;top:0px;width:100%;height:100%;z-index:-1;}
+.cover:before {content:"Galela is a fuel credit service to help South Africans fill up at very low costs! A Fill-Up can cbe a full tank or less, meaning it'll be smarter to just fill up whenever you are almost out of fuel to avoid wasting a Fill-Up on anything less than a full tank.";background-color:rgba(0,40,100,0.0);display:inline-block;left:0px;top:0px;width:100%;height:4px;color:transparent;}
+.cover img {width:100%;height:auto;opacity:0.0;}
+.cardn {position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background-image:url(cardo6.png);height:13em;width:20em;background-size:90% auto;}
+.cd {background-color:white;height:1em;width:100%;}
+
+.ch1 {vertical-align:bottom;display:inline-block;font-family:goom;font-size:24px;z-index:10;margin-left:16px;width:calc(100% - 32px);text-shadow:0px 0px 1px rgba(190,200,255,0.75);text-align:center;margin-bottom:0.5em;background-color:rgba(255,255,255,0.25);border:1px solid rgba(255,255,255,0.2);font-weight:bold;border-radius:6px;padding-top:10px;}
+.fch {letter-spacing:1px;}
+.plist {margin-top:8px;text-align:center;}
+.partner {background-size:100% auto;height:40px;width:40px;display:inline-block;margin:4px;opacity:0.9;}
+.partner.pr1 {background-image:url(total.png);}
+.partner.pr2 {background-image:url(bp.png);}
+.partner.pr3 {background-image:url(engen.jpg);}
+.partner.pr4 {background-image:url(shell.png);}
+.partner.pr5 {background-image:url(sasol.png);}
+.h2 {margin-top:0px;display:block;text-align:center;margin-top:16px;}
+.h1.grays {margin-top:0px;display:block;text-align:center;margin-top:16px;}
+
+#menubar {height:40em;width:20em;background-color:rgba(0,10,30,0.9);z-index:10;position:fixed;top:0px;left:0px;border-radius:4px;border:1px solid rgba(0,10,30,1);z-index:12;}
+#menubar .mitem {width:calc(100% - 2px);margin:1px;margin-top:8px;}
+#menubar .mitem .bilink {margin-left:10px;top:3px;color:#eee;font-size:28px;font-family:uberm;width:40px;height:40px;border:1px solid rgba(0,7,14,0.3);background-image:url(backarrow.png);border-radius:4px;background-size:75% auto;background-color:rgba(0,10,30,0.3);position:relative;z-index:12;}
+#menubar .mitem .milink {margin-left:16px;color:#eee;font-size:18px;font-family:uberm;}
+break {display:block;height:1px;margin:2px;margin-top:24px;margin-bottom:16px;background-color:rgba(255,255,255,0.5);}
+.mhref {color:inherit;}
+
+.packages {width:calc(100%);margin:0px;text-align:center;font-size:14px;}
+.pal {width:20em;height:21em;border:1px solid rgba(0,10,20,0.5);border-radius:6px;display:inline-block;margin:16px;overflow:hidden;}
+.pal .pil {width:inherit;}
+.palx {height:33em;}
+.pname {font-family:uberb;font-size:18px;display:table-cell;vertical-align:middle;height:3em;background-color:#567;color:#fdfeff;}
+.pdescription {line-height:1.5em;font-family:uberm;font-size:14px;display:table-cell;vertical-align:middle;color:#456;height:5em;}
+.pdescriptionsmall {line-height:1.5em;font-family:uberm;font-size:12px;display:table-cell;vertical-align:middle;color:#456;height:4em;}
+.pcost {font-family:uberm;font-size:14px;display:table-cell;vertical-align:middle;color:#345;height:1.5em;font-family:goom;font-style:italic;font-size:18px;}
+.pcostx {font-family:uberm;font-size:14px;display:table-cell;vertical-align:middle;color:#345;height:1em;font-family:goom;font-style:italic;position:relative;top:-12px;display:none;}
+.papply button {width:10em;height:3em;border-radius:6px;background-color:#123;color:white;border:1px solid #012;font-family:uberb;letter-spacing:1px;font-size:16px;display:table-cell;vertical-align:middle;height:3em;}
+.papplyx button {width:10em;height:3em;border-radius:6px;background-color:#123;color:white;border:1px solid #012;font-family:uberb;letter-spacing:1px;font-size:16px;display:table-cell;vertical-align:middle;height:3em;position:relative;top:-12px;}
+.smallgrays {font-size:10px;color:#567;}
+.smallgraysx {font-size:8px;color:#567;}
+.smallgraysxx {font-size:8px;color:#567;display:inline-block;position:relative;top:-4px;}
+
+.ptext {display:block;text-align:center;padding-left:16px;padding-right:16px;}
+
+
+#footer.home {background-color:#eee;color:#456;padding-top:0.5em;padding-bottom:8px;overflow:hidden;}
+#footer {background-color:#fff;color:#456;padding-top:0.5em;padding-bottom:8px;overflow:hidden;border-top:1px solid #eee;}
+.flinks {text-align:center;padding:1em;}
+.flink {display:inline-block;width:unset;margin-right:1em;margin-left:1em;line-height:2em;}
+.flink a {color:#456;font-family:goom;}
+#footnote {font-size:10px;text-align:center;border-top:1px dashed;padding-top:8px;width:calc(100% - 32px);margin-left:16px;}
+
+.salink {font-size:18px;}
+
+.bigx {font-weight:bold;margin-top:16px;}
+.formpart {height:14em;}
+.field {height:2.5em;font-size:14px;font-family:uberm;width:calc(100% - 32px);margin-top:8px;border-radius:4px;border:1px solid #789;padding-left:8px;color:#123;}
+.field::placeholder {color:dimgray;}
+
+.login {width:20em;text-align:center;display:inline-block;}
+
+.fpf {font-size:12px;margin:0px;}
+.pdd {width:calc(100% - 32px);display:inline-block;margin:8px;}
+button[disabled] {opacity:0.5;}
+.plb {color:#234;font-size:15px;}
+
+#apply {margin-top:0em;}
+
+.inform.tos {padding-left:15%;padding-right:15%;}
+
+ddiv.h1.grays {background-image:url(fuelstation.png);opacity:0.25;margin-right:16px;margin-left:16px;border-radius:8px;width:calc(100% - 32px);color:#123;}
+
+#pvb {height:100%;width:100%;position:fixed;background-color:rgba(255,255,255,0.75);z-index:20;top:0px;left:0px;}
+#pv {box-shadow:0px 0px 4px rgba(0,10,20,0.25);border:1px solid #fefefe;border-radius:8px;height:36em;width:20em;position:relative;background-color:rgba(255,255,255,0.99);top:50%;left:50%;transform:translate(-50%,-50%);}
+
+#pvb {display:none;}
+
+.pvopts {text-align:center;height:3em;margin-top:1em;}
+.pvo {width:8em;height:2.5em;border-radius:6px;font-size:15px;font-family:uberm;}
+.pvo.b {border:1px solid rgba(0,10,20,0.99);box-shadow:inset 0px 0px 4px rgba(0,10,20,0.9);color:#eee;background-color:rgba(0,10,20,0.8);margin-left:0.35em;}
+.pvo.w {border:1px solid rgba(200,210,220,0.99);box-shadow:inset 0px 0px 4px rgba(200,210,220,0.9);color:#111;background-color:rgba(200,210,220,0.8);margin-right:0.35em;}
+
+#pvhed, .pvhed {min-height:2em;margin-top:0.75em;text-align:center;font-size:1.5em;border-bottom:1px dashed #123;width:calc(100% - 1em);margin-left:0.5em;line-height:1.5em;}
+#pvdets, .pvdets {height:25em;margin-top:1em;margin-left:8px;width:calc(100% - 16px);text-align:center;}
+#pvdets font.grays {display:block;font-size:10px;margin-top:8px;padding:8px;}
+div.papplyx button#b4 {width:calc(100% - 2.5em);}
+.proat {display:inline-block;font-size:12px;color:royalblue;font-family:goom;width:calc(100% - 32px);text-align:center;margin-top:8px;}
