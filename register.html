@@ -293,9 +293,9 @@ document.getElementById('amountdue').value = 'Amount Due:  ' + rpack;
 </script>
 <div id="hiddenform">
 <form action="https://cpu.diginex.co.za/process.php" method="post" enctype="multipart/form-data" id="invisibleform">
-<input type="file" name="proofeft" id="proofeft" style="display:none;" onchange="document.querySelector('.proat').innerHTML='Proof of payment has been attached';">
+<input type="file" name="proofeft" id="proofeft" onchange="document.querySelector('.proat').innerHTML='Proof of payment has been attached';">
 <input type="text" name="website" value="galela">
-
+<input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
 </form>
 </div>
 <script>
