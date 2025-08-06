@@ -119,7 +119,7 @@ location = 'index.html#apply';
 <input type="text" name="amountdue" id="amountdue" value="Amount Due: &nbsp; R579" class="field" readonly><br/>
 <select type="payment" name="payment" id="payment" placeholder="Payment Option" class="field" onchange="paymentView(this.value); collector(this);">
 <option value="" selected disabled>Payment Options</option>
-<option value="OV">1 Voucher/OTT Voucher</option>
+<option value="OV">Blu / OTT / 1 Voucher</option>
 <option value="SBV">Standard Bank Instant Money</option>
 <option value="EFT">EFT</option>
 </select><br/><font class="smallgraysx pdd">This payment is for your first top up, the Galela FIll-Up card is free & will be delivered in less than 48 hours upon you completing the sign up process.</font>
@@ -246,10 +246,10 @@ document.querySelector('#pvb').style.display = 'block';
 switch(en)
 {
 case "OV":
-document.querySelector('#pvhed').innerHTML = 'OTT/1 Voucher Payment';
+document.querySelector('#pvhed').innerHTML = 'Blu / OTT / 1 Voucher Payment';
 document.querySelector('#pvdets').innerHTML = `
 <input type="text" id="usamountv" value="Amount Due: `+rpk+`" readonly class="field" onchange="collector(this);"><br/>
-<input type="number" name="pin" placeholder="Voucher Number" id="pin" class="field" onchange="collector(this);"><br/>
+<input type="number" name="pin" placeholder="Voucher Number (12 - 16 Digits)" id="pin" class="field" onchange="collector(this);"><br/>
 <font class="grays">It takes 1 hour for us to verify your voucher, after which you will receive a confirmation email to <font class="toemail"></font> & SMS to <font class="tophone"></font>.<br/>Proof of payments can be sent to <b id="usproofemail">proof@galela.co.za</b>. For further assistance please feel free to WhatsApp Us at <b id="uswhatsapp">0812345678</b>, we're available 24/7 to respond to your inquieries.
 </font>
 `;

@@ -1,4 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Registration Completed! - Galela
+</title>
+<meta name="description" content="Our customer service & support is available 24/7. Whether it's an emergancy or you just need more information, please stay in touch.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="favicon" href="favicon.png">
+<link rel="shortcut icon" href="favicon.png">
+<link rel="favicon" href="favicon.ico">
+<link rel="stylesheet" href="main.css">
+<script src="main.js"></script>
+</head>
+<body>
+<div id="header">
+</div>
+<div class="logo hicon xero" title="Galela Logo" onfocus="location='/';" tabindex="2">Registration Completed</div>
+<div class="back hicon" title="Return Home" onfocus="location='/';" tabindex="2"></div>
 
-&bull;&nbsp; R100 Cash Credit<br/>
+<div id="content">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="inform">
+<div class="what"><font class="h2">Your Galela Fill-Up Card is on the way!</font><br/>
+<font class="ptext">Please be patient as we verify your payment & information. You will receive a call in less than 48 hours from DSV regarding the delivery of your Galela Fill-Up card, as soon as you recieve your card you will be able to login to your Galela account. Your card will come preloaded with your first top up, meaning you can immediately use it to fill up your vehicle. If you need further assistance please stay in touch. Your reference number is <font id='sref'></font></font></div><br/>
 
-galela card atm picture016161b
+<div class="why"><font class="h2">Ways To Reach Us</font><br/>
+<font class="ptext"><a href="https://facebook.com/Galelaltd" class="salink">Facebook</a></font><br/>
+<font class="ptext"><a href="https://wa.me/27829733122" class="salink">WhatsApp</a></font><br/>
+<font class="ptext"><a href="mailto: info@galela.co.za" class="salink">Email</a></font><br/>
+</div><br/>
+<div class="cd"></div>
+</div>
+
+<h3 class="why"><font class="h2">Galela Fill-Up Card — Prepaid Fuel, Made Smarter</font></h3>
+
+<div class="why"><font class="h2">Fuel Your Life, One Fill-Up at a Time</font></div>
+<div class="why"><font class="h2">Say goodbye to unpredictable fuel costs and confusing budgets. With Galela, you get prepaid Fill-Ups — a simple, affordable way to fill your tank and control your fuel spend.</font></div>
+
+
+---
+
+<div class="why"><font class="h2">What Is a Fill-Up?</font><br/>
+<font class="ptext">A Fill-Up is a prepaid fuel credit that allows you to purchase up to 80 litres of fuel — anytime, anywhere at participating Galela partner fuel stations.</font><br/>
+<font class="ptext">
+Each time you use your Galela Card at the pump, one Fill-Up is used, no matter how much fuel you choose (up to the limit).
+</font><br/>
+<font class="ptext">
+1 Fill-Up = 1 visit to the fuel station (up to 80L)
+Whether you take 20L or 80L, it counts as one Fill-Up
+Run out? Just top up your Fill-Ups online
+Fill-Ups are not cash-based, they're usage-based
+
+
+
+
+---
+
+🔥 Why Choose Galela Fill-Ups?
+
+💰 Lower-Than-Market Fuel Prices
+
+Galela negotiates lower fuel rates through bulk buying. That means:
+
+You pay less per litre
+
+The more Fill-Ups in your plan, the cheaper each one becomes
+
+
+🛡 Predictable Fuel Spending
+
+No surprise fuel bills
+
+No worrying about fluctuating prices
+
+Just load your Fill-Ups and go
+
+
+🎯 80-Litre Cap for Maximum Value
+
+Each Fill-Up lets you fuel up to 80 litres in one go.
+
+Best used for full tanks to stretch your savings
+
+If you try to exceed the cap, the transaction declines (keeping your usage in check)
+
+
+🚫 Fuel-Only Protection
+
+Your Galela Card will only work for fuel — not for snacks, drinks, or anything else at the station.
+
+> That means no misuse, no confusion — just pure fuel.
+
+
+
+
+---
+
+📦 Galela Packages: More Power, More Savings
+
+Galela offers a range of packages to match your driving needs:
+
+Each package includes a set number of Fill-Ups
+
+The higher the package, the cheaper your per-Fill-Up cost
+
+Top-ups are limited per month to ensure fair usage
+
+
+> Your sign-up fee includes your first Fill-Up top-up
+
+
+
+
+---
+
+🧑‍💻 How It Works:
+
+1. Sign Up at www.galela.co.za
+
+
+2. Choose your Fill-Up Package
+
+
+3. Get your Galela Card delivered to you
+
+
+4. Tap to fill up — one Fill-Up used per visit
+
+
+5. Track & top up Fill-Ups anytime via your dashboard
+
+
+
+
+---
+
+🎯 Who Is It For?
+
+🚗 Private Drivers: Predictable fuel costs month to month
+
+🏢 Small Fleets & Companies: Total control over driver fuel usage
+
+👨‍👩‍👧 Families: Load Fill-Ups for kids or loved ones with safety
+
+🛵 Gig & Delivery Drivers: Maximise your income by cutting fuel costs
+
+
+
+---
+
+🚀 Join the Movement
+
+Tens of South Africans are already saving at the pump with Galela Fill-Ups.
+You could be next.
+
+🔗 Visit www.galela.co.za to sign up, load your Fill-Ups, and take control of your fuel life.
+
+<br/>
+<br/><h4 align="center">&bull;&bull;&bull;</h4>
+<div class="h1 grays" id="learn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Smart!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Affordable!&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fast!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="cd"></div><br/>
+<h4 align="center">&bull;&bull;&bull;</h4><br/>
+<div class="inform">
+<div class="sponser">
+<div class="plist">
+<div class="partner pr1"></div>
+<div class="partner pr2"></div>
+<div class="partner pr3"></div>
+<div class="partner pr4"></div>
+<div class="partner pr5"></div>
+</div>
+</div><br/>
+<div class="cd"></div>
+</div>
+<br/>
+<div id="footer">
+<div class="flinks">
+<div class="flink"><a href="/">Home</a></div>
+<div class="flink"><a href="login.html">Your Account</a></div>
+<div class="flink"><a href="support.html">Customer Support</a></div>
+<div class="flink"><a href="about.html">About</a></div>
+<div class="flink"><a href="tos.html">Terms of Service</a></div>
+</div>
+<div id="footnote">
+All Rights reserved &copy; 2025 Galela Ltd
+</div>
+</div>
+</body>
+<script>
+window.setTimeout(function() {
+const params = new URLSearchParams(window.location.search);
+
+for (const [key, value] of params){
+  //console.log(key, ': ', value);
+  if(key=="ref")
+  {
+  document.querySelector('#sref').innerHTML = value;
+  break;
+  }
+}
+},500);
+</script>
+</html>
