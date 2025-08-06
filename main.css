@@ -120,3 +120,4 @@ div.papplyx button#b4 {width:calc(100% - 2.5em);}
 
 input[type="checkbox"] {position:relative;bottom:-2px;}
 #hiddenform {display:none;}
+#sref {color:royalblue;font-weight:bold;}
