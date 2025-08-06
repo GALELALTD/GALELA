@@ -26,11 +26,11 @@ Registration Completed! - Galela
 <br/>
 <div class="inform">
 <div class="what"><font class="h2">Your Galela Fill-Up Card is on the way!</font><br/>
-<font class="ptext">Please be patient as we verify your payment & information. You will receive a call in less than 48 hours from DSV regarding the delivery of your Galela Fill-Up card, as soon as you recieve your card you will be able to login to your Galela account. Your card will come preloaded with your first top up, meaning you can immediately use it to fill up your vehicle. If you need further assistance please stay in touch. Your reference number is <font id='uref'></font></font></div><br/>
+<font class="ptext">Please be patient as we verify your payment & information. You will receive a call in less than 48 hours from DSV regarding the delivery of your Galela Fill-Up card, as soon as you recieve your card you will be able to login to your Galela account. Your card will come preloaded with your first top up, meaning you can immediately use it to fill up your vehicle. If you need further assistance please stay in touch. Your reference number is <font id='sref'></font></font></div><br/>
 
 <div class="why"><font class="h2">Ways To Reach Us</font><br/>
-<font class="ptext"><a href="https://facebook.com/" class="salink">Facebook</a></font><br/>
-<font class="ptext"><a href="https://whatsappme.com/" class="salink">WhatsApp</a></font><br/>
+<font class="ptext"><a href="https://facebook.com/Galelaltd" class="salink">Facebook</a></font><br/>
+<font class="ptext"><a href="https://wa.me/27829733122" class="salink">WhatsApp</a></font><br/>
 <font class="ptext"><a href="mailto: info@galela.co.za" class="salink">Email</a></font><br/>
 </div><br/>
 <div class="cd"></div>
@@ -70,4 +70,18 @@ All Rights reserved &copy; 2025 Galela Ltd
 </div>
 </div>
 </body>
+<script>
+window.setTimeout(function() {
+const params = new URLSearchParams(window.location.search);
+
+for (const [key, value] of params){
+  //console.log(key, ': ', value);
+  if(key=="ref")
+  {
+  document.querySelector('#sref').innerHTML = value;
+  break;
+  }
+}
+},500);
+</script>
 </html>
