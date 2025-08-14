@@ -268,9 +268,9 @@ case "EFT":
 document.querySelector('#pvhed').innerHTML = 'EFT Payment';
 document.querySelector('#pvdets').innerHTML = `
 <input type="text" id="usbank" value="Bank Name: ABSA Bank" readonly class="field"><br/>
-<input type="text" id="usaccountnumber" value="Account Number: 9387898199" readonly class="field"><br/>
+<input type="text" id="usaccountnumber" value="Account Number: 4069571983" readonly class="field"><br/>
 <input type="text" id="ustype" value="Account Type: Current / Cheque" readonly class="field"><br/>
-<input type="text" id="youreference" value="Payment Reference: `+collection['phone']+`" readonly class="field"><br/>
+<input type="text" id="youreference" value="Payment Reference: 8051301442" readonly class="field"><br/>
 <input type="text" id="usamount" value="Amount Due: R`+rpk+`" readonly class="field"><br/>
 <a href="javascript:void(0);" onclick="proofeft.click();" class="proat">Attach a proof of payment (Optional)</a>
 <font class="grays" style="position:relative;top:-10px">It takes  up to 90 minutes for an immediate EFT to reflect to us. Should you make a normal payment, it can take up to 48 hours to reflect to us. After which you will receive a confirmation email to <font class="toemail">`+collection['email']+`</font> & SMS to <font class="tophone">`+collection['phone']+`</font>.<br/>Proof of payments can also be sent to <b id="usproofemail">info@galela.co.za</b> if you did not attach it on this page.
@@ -308,4 +308,5 @@ document.getElementById('invisibleform').submit();
 }
 </script>
 </body>
+
 </html>
